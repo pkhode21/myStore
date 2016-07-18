@@ -1,0 +1,27 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@font-face
+{
+    font-family: brandon;
+    src: url("fonts/brandon_re.ttf");
+    font-weight: 500;
+    font-stretch: condensed;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face
+ {
+    font-family:"envoy";
+    src: url('fonts/envoy.ttf');
+    font-stretch: ultra-expanded;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face
+{
+  font-family:"envoy_sans";
+  src: url('fonts/envoy_sans.ttf') format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}

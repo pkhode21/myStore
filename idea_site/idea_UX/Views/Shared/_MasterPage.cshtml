@@ -1,0 +1,63 @@
+﻿
+<!DOCTYPE html>
+
+<html ng-app="myStore">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title ng-bind="title"></title>
+    <!--css bundle-->
+    <link href="~/Content/Css/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    
+    <base href="/" />
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <!--header-->
+            <div class="row" id="header" style="margin-bottom:75px;">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <!--logo-->
+                    <div class="col-xs-5 col-sm-4 col-md-2 col-lg-2">
+                        <a href="javascript:void(0)" title="MyStore">
+                            <img src="~/Content/Media/images/static/dStudio.png" alt="myStore logo" />
+                        </a>
+                    </div>
+
+                    <!--menu-->
+                    <div class="col-xs-7 col-sm-8 col-md-3 col-md-offset-7" id="main_menu">
+
+                        <div class="col-md-4 menu_tab hvr-underline-from-center">
+                            <a ng-href="user/register">
+                                Register
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 menu_tab hvr-underline-from-center">
+                            <a ng-href="user/login">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--page content-->
+            <div class="row" ng-controller="homeCtrl">
+                @RenderBody()
+            </div>
+
+            <!--footer-->
+            <div class="row" id="footer">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <p id="footer_msg">
+                        &copy; 2016 myStore
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--js bundle-->
+    @Scripts.Render("~/Content/JavaScript")
+</body>
+</html>

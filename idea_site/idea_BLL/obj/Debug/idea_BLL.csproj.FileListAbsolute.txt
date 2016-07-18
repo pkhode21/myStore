@@ -1,0 +1,9 @@
+D:\idea_application_2\myBus\idea_site\idea_BLL\bin\Debug\idea_BLL.dll
+D:\idea_application_2\myBus\idea_site\idea_BLL\bin\Debug\idea_BLL.pdb
+D:\idea_application_2\myBus\idea_site\idea_BLL\obj\Debug\idea_BLL.dll
+D:\idea_application_2\myBus\idea_site\idea_BLL\obj\Debug\idea_BLL.pdb
+D:\idea_application_2\myBus\idea_site\idea_BLL\bin\Debug\idea_BLL.dll.config
+D:\idea_application_2\myBus\idea_site\idea_BLL\bin\Debug\EntityFramework.dll
+D:\idea_application_2\myBus\idea_site\idea_BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\idea_application_2\myBus\idea_site\idea_BLL\bin\Debug\EntityFramework.xml
+D:\idea_application_2\myBus\idea_site\idea_BLL\bin\Debug\EntityFramework.SqlServer.xml

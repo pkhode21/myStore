@@ -1,0 +1,76 @@
+﻿#user_register_form, .input_label, .txtBox, #register_byside_text p
+{
+    font-family: envoy_sans;
+}
+
+#register_byside_text h3
+{
+    font-family: Envoy;
+    border-bottom: 1px solid #f00;
+}
+
+#register_form_heading
+{
+    font-family: Envoy;
+    text-shadow: 5px 10px 5.5px rgba(19, 22, 15, 0.35);
+}
+
+#user_register_form
+{
+    padding: 25px;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+    border-color: #eee;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+    #user_register_form .row
+    {
+        margin-bottom: 45px;
+    }
+
+.input_label, #register_byside_text p
+{
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
+}
+
+#register_byside_text p
+{
+    font-size: 16px;
+}
+
+
+.registration_steps
+{
+    margin-top: -25px;
+    padding: 25px;
+    background: #fff;
+}
+
+    .registration_steps p
+    {
+        color: #393c44;
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+.green
+{
+    color: #4cae4c;
+}
+
+.yellow
+{
+    color: #ffff00;
+}
+
+.blue
+{
+    color: #286090;
+}

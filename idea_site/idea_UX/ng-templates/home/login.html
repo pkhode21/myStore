@@ -1,0 +1,106 @@
+﻿<div>
+    <!--feature banner-->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="feature_banner">
+        <h1>
+            Login!!
+        </h1>
+    </div>
+
+    <!--content row-->
+    <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:50px;">
+        <!--left side content pane-->
+        <div class="col-md-7 col-md-offset-2">
+
+            <form method="post" id="user_register_form">
+                
+                <!--email-->
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <p class="input_label">
+                            Your Email
+                        </p>
+                    </div>
+                    <div class="col-sm-8 col-md-9">
+                        <input type="email" class="txtBox med" placeholder="Your Email Address" />
+                    </div>
+                </div>
+
+                <!--password-->
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <p class="input_label"> Your&nbsp;Password </p>
+                    </div>
+                    <div class="col-sm-8 col-md-9">
+                        <input type="password" class="txtBox med" placeholder="Your Password" />
+                    </div>
+                </div>
+                
+                <!--button-->
+                <div class="row" style="margin-top:35px;">
+                    <div class="col-md-8">
+                        <input type="button" class="btn btn-primary" value="Login" id="btnRegister" ng-click="addUser()" />
+                    </div>
+                    <div class="col-md-4">
+                        <p data-toggle="modal" data-target="#resetPassword_modal" id="forgot_password_link">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                        Forgot Password</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!--modal-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="modal fade" id="resetPassword_modal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title input_label">Reset Password</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form name="resetPwdForm" method="post">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <p class="input_label">
+                                                    Your Email 
+                                                </p>
+                                            </div>
+                                            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                                                <input type="email" class="med txtBox" name="UserEmailAddress" placeholder="Enter your registered email address" ng-model="UserEmailAddress" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row" style="margin-top:25px;">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                                                <input type="button" class="btn btn-primary" value="Submit" ng-click="resetPassword(UserEmailAddress)"
+                                                       ng-disabled="resetPwdForm.UserEmailAddress.$pristine || resetPwdForm.UserEmailAddress.$dirty && resetPwdForm.UserEmailAddress.$invalid" style="font-family:envoy_sans;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+    #user_register_form div
+    {
+        padding-left:25px;
+    }
+    #forgot_password_link
+    {
+        color:#55949B;
+        cursor:pointer;
+    }
+    
+</style>

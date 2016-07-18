@@ -1,0 +1,103 @@
+﻿<div>
+    <!--feature banner-->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="feature_banner">
+        <h1>
+            Register!!
+        </h1>
+    </div>
+
+    <!--content row-->
+    <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:50px;">
+        <!--left side content pane-->
+        <div class="col-md-7">
+
+            <form method="post" id="user_register_form">
+                <!--name-->
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <p class="input_label">
+                            Your Name
+                        </p>
+                    </div>
+                    <div class="col-sm-8 col-md-9">
+                        <div class="col-sm-6 col-md-4" style="margin-left:-15px;"><input type="text" class="txtBox mini" placeholder="First Name" /></div>
+                        <div class="col-sm-6 col-md-5"> <input type="text" class="txtBox mini" placeholder="Last Name" /></div>
+                    </div>
+                </div>
+
+                <!--email-->
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <p class="input_label">
+                            Your Email
+                        </p>
+                    </div>
+                    <div class="col-sm-8 col-md-9">
+                        <input type="email" class="txtBox med" placeholder="Your Email Address" />
+                    </div>
+                </div>
+
+                <!--phone-->
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <p class="input_label">Your Mobile </p>
+                    </div>
+                    <div class="col-sm-8 col-md-9">
+                        <input type="email" class="txtBox med" placeholder="10 digit mobile number" />
+                    </div>
+                </div>
+
+                <!--password-->
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <p class="input_label"> Your&nbsp;Password </p>
+                    </div>
+                    <div class="col-sm-8 col-md-9">
+                        <input type="password" class="txtBox med" placeholder="Strong Password" />
+                    </div>
+                </div>
+
+                <!--select user type-->
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <p class="input_label">Registering as </p>
+                    </div>
+                    <div class="col-sm-4 col-md-9">
+                        <select class="med btn btn-default dropdown-toggle">
+                            <option value="-1" selected="selected">Select</option>
+                            <option value="1">Merchant</option>
+                            <option value="2">Customer</option>
+                            <option value="3">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--button-->
+                <div class="row" style="margin-top:35px;">
+                    <div class="col-md-12">
+                        <input type="button" class="btn btn-primary" value="Register" id="btnRegister" ng-click="addUser()" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--right side content pane-->
+        <div class="col-md-4" id="register_byside_text">
+                <h3>
+                    Step By Step
+                </h3>
+
+                <div class="registration_steps">
+                    <p>
+                        <span class="glyphicon glyphicon-ok-sign green"></span>
+                        This is Step 1.Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-ok-sign yellow"></span>  This is Step 1.Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-ok-sign yellow"></span>  This is Step 1.Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    </p>
+                </div>
+        </div>
+    </div>
+</div>
